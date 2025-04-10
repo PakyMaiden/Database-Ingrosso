@@ -14,4 +14,3 @@ Per provare il DB:
 2. Lancia lo script "DML_Ingrosso.sql" per popolare il DB. E' stato usato https://www.mockaroo.com/ per la popolazione.
 3. il resto (viste, trigger, funzioni).
 4. Enjoy!
-5. 
