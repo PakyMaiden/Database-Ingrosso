@@ -1,0 +1,17 @@
+
+-- Monitora il numero di ordini
+
+CREATE OR REPLACE PROCEDURE Numero_Ordini (GIORNO DATE)
+IS 
+    ORDINI NUMBER := 0;
+
+BEGIN
+
+    SELECT COUNT(*) INTO ORDINI 
+    FROM ORDINE 
+    WHERE DATA_ORDINE = GIORNO;
+
+    DBMS_OUTPUT.PUT_LINE (ORDINI);
+END;
+
+-- EXECUTE Numero_Ordini (TO_DATE('26/01/2023','DD/MM/YYYY'));
